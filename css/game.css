@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bangers', cursive;
+}
+
+body {
+    background-image: url('./../images/dracarys.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: auto;
+    background-position-y: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#loading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 150px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-radius: 5px;
+}
+
+#loading img {
+    height: 50%;
+    width: 50%;
+    border-radius: 90px;
+}
+
+.rotate {
+    animation: rotation 4s infinite linear;
+}
+
+#game {
+    display: none;
+    width: 500px;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-game {
+    display: flex;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    justify-content: center;
+	align-items: center;
+	margin: 5px 5px;
+	border-radius: 25px;
+    transform-origin: center right;
+}
+
+.card-game-front {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    background-image: url('./../images/short_opening.gif');
+    cursor: pointer;
+}
+
+.card-game-back {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+
+.info-game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    bottom: 40px;
+    position: absolute;
+}
+
+.btn-play-new {
+    border: solid 2px #ffff00;
+    border-radius: 35px;
+    background-color: #ffff00;
+    cursor: pointer;
+    padding: 5px;
+    width: 150px;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.rotateCard {
+    transform: translateX(-100%) rotateY(-90deg);
+}
